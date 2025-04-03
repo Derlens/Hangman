@@ -1,64 +1,66 @@
-Hangman Game
+ Hangman Game
 
 Overview
 
-This is a Python implementation of the classic word-guessing game Hangman. The game allows multiple players to take turns guessing a secret word, with a maximum of six incorrect guesses before the game ends.
+   This is a Python implementation of the classic word-guessing game Hangman. The game allows multiple players to take turns guessing a secret word, with a maximum of six incorrect guesses before the game ends.
 
 Features
-Supports multiple players
 
-Loads words from an external file (words.txt)
+  * Supports multiple players
 
-Randomly selects a secret word for each round
+  * Loads words from an external file (words.txt)
 
-Displays guessed letters and hidden portions of the word
+  * Randomly selects a secret word for each round
 
-Allows players to switch after reaching the maximum number of mistakes
+  * Displays guessed letters and hidden portions of the word
+
+  * Allows players to switch after reaching the maximum number of mistakes
 
 Game Rules
-The program selects a secret word from words.txt.
 
-A player tries to guess the word by entering full words (not single letters).
+  1. The program selects a secret word from words.txt.
 
-If the guessed word matches the secret word, the player wins the round.
+  2. A player tries to guess the word by entering full words (not single letters).
 
-If the guessed word is incorrect, the mistake count increases.
+  3. If the guessed word matches the secret word, the player wins the round.
 
-Each player has a maximum of 6 incorrect guesses before switching to the next player.
+  4. If the guessed word is incorrect, the mistake count increases.
 
-The game continues until all players have played or a player wins.
+  5. Each player has a maximum of 6 incorrect guesses before switching to the next player.
+
+  6. The game continues until all players have played or a player wins.
 
 Installation & Setup
-Ensure you have Python 3 installed.
 
-Clone or download this repository.
+  1. Ensure you have Python 3 installed.
 
-Prepare a words.txt file in the same directory, containing words for the game (one word per line).
+  2. Clone or download this repository.
 
-Run the game with:
+  3. Prepare a words.txt file in the same directory, containing words for the game (one word per line).
 
-bash
-Copy
-
-Edit
-python hangman.py
+  4. Run the game with:
+     python hangman.py
+     
 File Structure
-hangman.py – Main script to run the game
 
-words.txt – List of possible secret words
+  * hangman.py – Main script to run the game
+
+  * words.txt – List of possible secret words
 
 How to Play
-Run the script.
 
-Enter the number of players.
+  1. Run the script.
 
-Each player takes turns guessing words.
+  2. Enter the number of players.
 
-The game ends when a player correctly guesses the word or all players run out of turns.
+  3. Each player takes turns guessing words.
+
+  4. The game ends when a player correctly guesses the word or all players run out of turns.
 
 Future Enhancements
-Improve the UI with ASCII art for Hangman
 
-Add difficulty levels with different word lengths
+  * Improve the UI with ASCII art for Hangman
 
-Implement a scoring system
+  * Add difficulty levels with different word lengths
+
+  * Implement a scoring system
